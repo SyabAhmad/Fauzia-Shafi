@@ -1,15 +1,14 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import { profile } from "../data";
 
 const links = [
-  { label: "Home", href: "#home" },
-  { label: "About", href: "#about" },
   { label: "Services", href: "#services" },
-  { label: "Work", href: "#work" },
-  { label: "Education", href: "#education" },
-  { label: "Contact", href: "#contact" },
+  { label: "Portfolio", href: "#work" },
+  { label: "Process", href: "#process" },
+  { label: "Pricing", href: "#pricing" },
+  { label: "Reviews", href: "#reviews" },
+  { label: "Hire Me", href: "#hire" },
 ];
 
 export default function Navbar() {
@@ -25,29 +24,27 @@ export default function Navbar() {
 
   return (
     <header
-      className={`fixed top-0 inset-x-0 z-50 transition-all duration-500 ${
+      className={`fixed top-0 inset-x-0 z-50 transition-all duration-300 ${
         scrolled
-          ? "backdrop-blur-xl bg-ink/70 border-b border-rose/15"
+          ? "backdrop-blur-xl bg-ink/85 border-b border-rose/20 shadow-[0_8px_30px_-12px_rgba(226,149,148,0.25)]"
           : "bg-transparent"
       }`}
     >
-      <nav className="max-w-6xl mx-auto px-5 sm:px-8 h-16 flex items-center justify-between">
+      <nav className="max-w-7xl mx-auto px-5 sm:px-8 h-16 flex items-center justify-between">
         <a
-          href="#home"
-          className="font-hand text-2xl text-rose flex items-center gap-2"
+          href="#top"
+          className="font-script text-3xl text-rose flex items-center gap-1"
         >
-          <span className="w-7 h-7 rounded-full bg-rose/20 border border-rose/40 flex items-center justify-center text-sm font-sans text-rose">
-            {profile.name[0]}
-          </span>
-          {profile.name}
+          fauzia<span className="text-cream">.</span>
+          <span className="inline-block w-2 h-2 rounded-full bg-rose animate-pulse" />
         </a>
 
-        <ul className="hidden md:flex items-center gap-1">
+        <ul className="hidden lg:flex items-center gap-1">
           {links.map((l) => (
             <li key={l.href}>
               <a
                 href={l.href}
-                className="px-3 py-2 text-sm text-blush/80 hover:text-rose transition-colors rounded-full hover:bg-rose/10"
+                className="px-3 py-2 text-sm text-blush/80 hover:text-rose transition-colors rounded-full hover:bg-rose/10 font-display"
               >
                 {l.label}
               </a>
@@ -56,17 +53,17 @@ export default function Navbar() {
         </ul>
 
         <a
-          href="#contact"
-          className="hidden md:inline-flex items-center gap-2 px-4 py-2 rounded-full bg-rose text-ink text-sm font-medium hover:bg-blush transition-colors"
+          href="#hire"
+          className="hidden md:inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-rose text-ink text-sm font-bold hover:bg-blush transition-all hover:scale-105 hover:shadow-[0_10px_25px_-8px_rgba(226,149,148,0.7)]"
         >
-          Let&apos;s Talk
+          BOOK NOW
           <span aria-hidden>→</span>
         </a>
 
         <button
           aria-label="Toggle menu"
           onClick={() => setOpen((v) => !v)}
-          className="md:hidden w-10 h-10 rounded-full border border-rose/30 text-rose flex items-center justify-center"
+          className="md:hidden w-10 h-10 rounded-full border border-rose/40 text-rose flex items-center justify-center"
         >
           <span className="block w-4 h-px bg-rose shadow-[0_-5px_0_0_currentColor,0_5px_0_0_currentColor]" />
         </button>
@@ -86,15 +83,6 @@ export default function Navbar() {
                 </a>
               </li>
             ))}
-            <li>
-              <a
-                href="#contact"
-                onClick={() => setOpen(false)}
-                className="mt-2 inline-flex items-center gap-2 px-4 py-2 rounded-full bg-rose text-ink font-medium"
-              >
-                Let&apos;s Talk →
-              </a>
-            </li>
           </ul>
         </div>
       )}

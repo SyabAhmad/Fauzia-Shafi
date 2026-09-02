@@ -10,6 +10,7 @@
 
   --font-sans: var(--font-inter);
   --font-hand: var(--font-caveat);
+  --font-script: var(--font-script);
   --font-display: var(--font-playfair);
 }
 

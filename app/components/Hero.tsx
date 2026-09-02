@@ -1,113 +1,160 @@
 import Image from "next/image";
-import { profile } from "../data";
 
 export default function Hero() {
   return (
     <section
-      id="home"
-      className="relative pt-32 pb-24 sm:pt-40 sm:pb-32 overflow-hidden"
+      id="top"
+      className="relative pt-28 pb-16 sm:pt-32 sm:pb-20 overflow-hidden bg-grid"
     >
       {/* Decorative blobs */}
-      <div className="pointer-events-none absolute -top-20 -right-32 w-[420px] h-[420px] rounded-full bg-rose/20 blur-3xl animate-float-slow" />
-      <div className="pointer-events-none absolute top-40 -left-24 w-[360px] h-[360px] rounded-full bg-blush/20 blur-3xl animate-float-slower" />
+      <div className="pointer-events-none absolute -top-32 -right-32 w-[500px] h-[500px] rounded-full bg-rose/30 blur-3xl animate-float-slow" />
+      <div className="pointer-events-none absolute top-60 -left-32 w-[400px] h-[400px] rounded-full bg-blush/20 blur-3xl animate-float-slower" />
+      <div className="pointer-events-none absolute top-1/2 left-1/2 -translate-x-1/2 w-[700px] h-[700px] rounded-full bg-rose/5 blur-3xl" />
 
-      <div className="relative max-w-6xl mx-auto px-5 sm:px-8 grid md:grid-cols-2 gap-12 items-center">
-        <div className="order-2 md:order-1">
-          <p className="font-hand text-2xl sm:text-3xl text-rose mb-3">
-            Hi, I&apos;m
-          </p>
-          <h1 className="font-display text-5xl sm:text-7xl font-bold leading-[1.05] text-cream">
-            Fauzia
-            <br />
-            <span className="text-shimmer">Shafi.</span>
-          </h1>
+      {/* Marquee strip */}
+      <div className="relative overflow-hidden border-y border-rose/20 bg-ink/60 backdrop-blur py-3 mb-16">
+        <div className="flex gap-12 animate-marquee whitespace-nowrap font-display font-bold text-rose/80 uppercase tracking-widest text-sm">
+          {Array(2).fill(0).map((_, i) => (
+            <div key={i} className="flex gap-12 shrink-0">
+              <span>✦ Instagram Posts</span>
+              <span>★ LinkedIn Banners</span>
+              <span>✦ Facebook Ads</span>
+              <span>★ Profile Pictures</span>
+              <span>✦ Posters & Flyers</span>
+              <span>★ Brand Identity</span>
+              <span>✦ X / Twitter Headers</span>
+              <span>★ YouTube Thumbnails</span>
+              <span>✦ Ad Creatives</span>
+            </div>
+          ))}
+        </div>
+      </div>
 
-          <p className="mt-6 text-lg sm:text-xl text-blush/90 font-display italic">
-            {profile.tagline}.
-          </p>
-
-          <div className="mt-6 inline-flex flex-wrap gap-2">
-            {["Social Media", "Branding", "Canva", "Flyers", "Posters"].map(
-              (t) => (
-                <span
-                  key={t}
-                  className="px-3 py-1.5 rounded-full border border-rose/30 text-blush/90 text-sm"
-                >
-                  {t}
-                </span>
-              )
-            )}
+      <div className="relative max-w-7xl mx-auto px-5 sm:px-8">
+        <div className="text-center max-w-5xl mx-auto">
+          {/* Handwritten kicker */}
+          <div className="inline-flex items-center gap-3 px-5 py-2 rounded-full bg-rose/10 border border-rose/30 backdrop-blur mb-8">
+            <span className="font-script text-rose text-2xl">hi, i&apos;m</span>
+            <span className="font-bold text-cream tracking-wider">FAUZIA SHAFI</span>
+            <span className="text-rose">✦</span>
           </div>
 
-          <p className="mt-8 text-stone leading-relaxed max-w-md">
-            Designing brands that inspire — through clean, modern, and impactful
-            visuals.
+          {/* Mega headline */}
+          <h1 className="font-display font-black text-cream leading-[0.92] tracking-tight">
+            <span className="block text-[clamp(3rem,9vw,7.5rem)]">I DESIGN</span>
+            <span className="block font-script text-shimmer text-[clamp(3.5rem,11vw,9rem)] leading-[0.95] py-2">
+              scroll-stopping
+            </span>
+            <span className="block text-[clamp(3rem,9vw,7.5rem)]">
+              SOCIAL <span className="italic text-rose">FEEDS.</span>
+            </span>
+          </h1>
+
+          <p className="mt-8 text-lg sm:text-xl text-blush/90 max-w-2xl mx-auto leading-relaxed">
+            Custom Instagram, LinkedIn, Facebook & X posts, banners, DPs, ads and
+            posters — designed to make your brand{" "}
+            <span className="font-script text-rose text-2xl">unforgettable.</span>
           </p>
 
-          <div className="mt-8 flex flex-wrap gap-3">
+          <div className="mt-10 flex flex-wrap gap-4 justify-center">
             <a
-              href="#contact"
-              className="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-rose text-ink font-medium hover:bg-blush transition-all hover:shadow-[0_10px_30px_-10px_rgba(226,149,148,0.6)]"
+              href="#hire"
+              className="group inline-flex items-center gap-3 px-8 py-4 rounded-full bg-rose text-ink font-black text-lg hover:bg-blush transition-all hover:scale-105 hover:shadow-[0_20px_40px_-12px_rgba(226,149,148,0.8)]"
             >
-              DM Now to Start
-              <span aria-hidden>→</span>
+              I NEED DESIGNS
+              <span className="transition-transform group-hover:translate-x-1">
+                →
+              </span>
             </a>
             <a
               href="#work"
-              className="inline-flex items-center gap-2 px-6 py-3 rounded-full border border-rose/40 text-blush hover:border-rose hover:bg-rose/10 transition-colors"
+              className="inline-flex items-center gap-3 px-8 py-4 rounded-full border-2 border-rose/50 text-cream font-bold text-lg hover:border-rose hover:bg-rose/10 transition-all"
             >
-              View My Work
+              SEE EXAMPLES
             </a>
           </div>
 
-          <div className="mt-10 flex items-center gap-4">
-            <div className="flex -space-x-2">
-              {["#E29594", "#F3C4C2", "#FBF6F4"].map((c, i) => (
-                <span
-                  key={i}
-                  className="w-8 h-8 rounded-full border-2 border-ink"
-                  style={{ background: c }}
-                />
-              ))}
+          {/* Trust badges */}
+          <div className="mt-12 flex flex-wrap items-center justify-center gap-x-8 gap-y-3 text-sm">
+            <div className="flex items-center gap-2 text-blush/80">
+              <span className="text-rose text-lg">★</span>
+              <span className="font-bold text-cream">50+</span>
+              <span>designs delivered</span>
             </div>
-            <p className="text-sm text-stone">
-              <span className="text-cream font-medium">50+</span> designs
-              crafted • <span className="text-cream font-medium">2024</span>{" "}
-              active
-            </p>
+            <span className="text-rose/40">•</span>
+            <div className="flex items-center gap-2 text-blush/80">
+              <span className="text-rose text-lg">★</span>
+              <span className="font-bold text-cream">24h</span>
+              <span>turnaround</span>
+            </div>
+            <span className="text-rose/40">•</span>
+            <div className="flex items-center gap-2 text-blush/80">
+              <span className="text-rose text-lg">★</span>
+              <span className="font-bold text-cream">100%</span>
+              <span>satisfaction</span>
+            </div>
           </div>
         </div>
 
-        {/* DP with ring frame (inspired by saraali) */}
-        <div className="order-1 md:order-2 flex justify-center">
-          <div className="relative">
-            <div className="absolute inset-0 -m-6 rounded-full border-[10px] border-ink" />
-            <div className="absolute inset-0 -m-3 rounded-full border-[2px] border-rose/60" />
-            <div className="relative w-64 h-64 sm:w-80 sm:h-80 rounded-full overflow-hidden shadow-[0_30px_60px_-20px_rgba(226,149,148,0.5)]">
+        {/* Big showcase collage */}
+        <div className="relative mt-20 grid grid-cols-12 gap-4 sm:gap-6">
+          {/* Main hero card */}
+          <div className="col-span-12 md:col-span-7 relative group">
+            <div className="absolute -inset-4 bg-gradient-to-br from-rose/30 to-blush/20 rounded-[2rem] blur-2xl opacity-60 group-hover:opacity-100 transition-opacity" />
+            <div className="relative aspect-[4/3] rounded-3xl overflow-hidden border-2 border-rose/30 shadow-2xl">
               <Image
-                src="/dp.jpg"
-                alt={profile.name}
+                src="/banner.jpg"
+                alt="Elevating Brands Through Creative Visuals"
                 fill
                 priority
                 className="object-cover"
               />
-            </div>
-            {/* Floating chips */}
-            <div className="absolute -top-2 -right-2 px-3 py-1.5 rounded-full bg-rose text-ink text-xs font-medium shadow-lg animate-float-slow">
-              ✨ Brand Designer
-            </div>
-            <div className="absolute -bottom-2 -left-2 px-3 py-1.5 rounded-full bg-cream text-ink text-xs font-medium shadow-lg animate-float-slower">
-              🎨 Canva Pro
+              <div className="absolute inset-0 bg-gradient-to-t from-ink via-transparent to-transparent" />
+              <div className="absolute bottom-5 left-5 right-5 flex items-end justify-between">
+                <div>
+                  <p className="font-script text-3xl text-rose">Featured work</p>
+                  <p className="text-cream font-display text-xl">Brand Posters</p>
+                </div>
+                <span className="px-3 py-1 rounded-full bg-ink/80 backdrop-blur text-xs text-rose font-bold border border-rose/30">
+                  SOCIAL POST
+                </span>
+              </div>
             </div>
           </div>
-        </div>
-      </div>
 
-      {/* Scroll cue */}
-      <div className="relative mt-16 flex justify-center">
-        <span className="text-xs uppercase tracking-[0.3em] text-stone">
-          scroll
-        </span>
+          {/* Side stack */}
+          <div className="col-span-12 md:col-span-5 grid grid-cols-2 gap-4 sm:gap-6">
+            <div className="relative aspect-square rounded-3xl overflow-hidden border-2 border-rose/30 group card-hover">
+              <Image src="/cover.jpg" alt="DP design" fill className="object-cover" />
+              <div className="absolute inset-0 bg-gradient-to-t from-ink/90 to-transparent" />
+              <div className="absolute bottom-3 left-3 right-3">
+                <p className="font-script text-xl text-rose">Profile Pics</p>
+                <p className="text-xs text-cream/80">DP Design</p>
+              </div>
+            </div>
+            <div className="relative aspect-square rounded-3xl overflow-hidden border-2 border-rose/30 group card-hover">
+              <Image src="/card.jpg" alt="Brand banner" fill className="object-cover" />
+              <div className="absolute inset-0 bg-gradient-to-t from-ink/90 to-transparent" />
+              <div className="absolute bottom-3 left-3 right-3">
+                <p className="font-script text-xl text-rose">Banners</p>
+                <p className="text-xs text-cream/80">FB / LinkedIn</p>
+              </div>
+            </div>
+            <div className="relative col-span-2 aspect-[2/1] rounded-3xl overflow-hidden border-2 border-rose/30 group card-hover">
+              <Image src="/palette.jpg" alt="Brand palette" fill className="object-cover" />
+              <div className="absolute inset-0 bg-gradient-to-r from-ink/95 via-ink/40 to-transparent" />
+              <div className="absolute inset-y-0 left-5 flex flex-col justify-center">
+                <p className="font-script text-3xl text-rose">Your Brand.</p>
+                <p className="text-cream font-display text-xl">Perfected.</p>
+              </div>
+            </div>
+          </div>
+
+          {/* Floating tag */}
+          <div className="hidden md:block absolute -top-6 left-1/2 -translate-x-1/2 font-script text-3xl text-rose rotate-[-3deg]">
+            ↓ scroll to see more
+          </div>
+        </div>
       </div>
     </section>
   );

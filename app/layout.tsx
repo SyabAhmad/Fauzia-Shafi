@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Inter, Caveat, Playfair_Display } from "next/font/google";
+import { Inter, Caveat, Playfair_Display, Dancing_Script } from "next/font/google";
 import "./globals.css";
 
 const inter = Inter({
@@ -16,27 +16,36 @@ const caveat = Caveat({
 const playfair = Playfair_Display({
   variable: "--font-playfair",
   subsets: ["latin"],
-  weight: ["500", "600", "700", "800"],
+  weight: ["500", "600", "700", "800", "900"],
   style: ["normal", "italic"],
 });
 
+const dancing = Dancing_Script({
+  variable: "--font-script",
+  subsets: ["latin"],
+  weight: ["400", "500", "600", "700"],
+});
+
 export const metadata: Metadata = {
-  title: "Fauzia Shafi — Graphic Designer & Canva Specialist",
+  title: "Fauzia Shafi — Custom Instagram, LinkedIn & Brand Designs",
   description:
-    "Fauzia Shafi is a Graphic Designer passionate about elevating brands through creative visuals. Specializing in social media design, branding, Canva design, and marketing creatives.",
+    "Need scroll-stopping Instagram posts, LinkedIn banners, Facebook ads, X headers, YouTube thumbnails or full brand kits? Fauzia Shafi designs them all — fast, custom, and on-brand.",
   keywords: [
     "Fauzia Shafi",
-    "Graphic Designer",
-    "Social Media Designer",
-    "Canva Designer",
-    "Brand Identity",
-    "Portfolio",
+    "Instagram post designer",
+    "LinkedIn banner designer",
+    "Facebook ad designer",
+    "X Twitter header designer",
+    "YouTube thumbnail designer",
+    "Profile DP designer",
+    "Brand kit designer",
+    "Hire graphic designer",
   ],
   authors: [{ name: "Fauzia Shafi" }],
   openGraph: {
-    title: "Fauzia Shafi — Graphic Designer",
+    title: "Custom Social Media & Brand Designs by Fauzia Shafi",
     description:
-      "Elevating brands through creative visuals. Social media design, branding, and Canva expertise.",
+      "Instagram, LinkedIn, Facebook, X, YouTube — every platform, one designer.",
     type: "website",
   },
 };
@@ -45,7 +54,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
     <html
       lang="en"
-      className={`${inter.variable} ${caveat.variable} ${playfair.variable} antialiased`}
+      className={`${inter.variable} ${caveat.variable} ${playfair.variable} ${dancing.variable} antialiased`}
     >
       <body className="min-h-screen bg-ink text-blush font-sans selection:bg-rose/40">
         {children}
