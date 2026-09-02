@@ -108,10 +108,16 @@ export default function Work() {
                   </div>
                 </div>
               </div>
+              {/* Huge watermark number behind the card */}
+              <div className="absolute inset-0 flex items-center justify-center overflow-hidden pointer-events-none rounded-3xl">
+                <span className="font-display font-black text-white/[0.06] text-[12rem] leading-none select-none">
+                  {String(i + 1).padStart(2, "0")}
+                </span>
+              </div>
+
               <div className="p-5">
-                <div className="flex items-center justify-between">
+                <div className="relative flex items-center justify-between">
                   <p className="text-rose text-xs font-bold uppercase tracking-wider">{p.type}</p>
-                  <span className="font-display font-black text-rose/30">0{i + 1}</span>
                 </div>
                 <p className="mt-2 text-blush/80 text-sm leading-relaxed">{p.desc}</p>
               </div>
@@ -143,9 +149,15 @@ export default function Work() {
                 </div>
               </div>
               <div className="p-3">
-                <div className="flex items-center justify-between">
+                {/* Huge watermark number behind the card */}
+                <div className="absolute inset-0 flex items-center justify-center overflow-hidden pointer-events-none">
+                  <span className="font-display font-black text-white/[0.06] text-[8rem] sm:text-[10rem] leading-none select-none">
+                    {String(i + 1).padStart(2, "0")}
+                  </span>
+                </div>
+                <div className="relative flex items-center justify-between">
                   <p className="text-rose text-[10px] font-bold uppercase tracking-wider">{p.type}</p>
-                  <span className="font-display font-black text-rose/30 text-xs">0{i + 1}</span>
+                  <span className="hidden">{String(i + 1).padStart(2, "0")}</span>
                 </div>
                 <p className="mt-1 text-blush/70 text-[10px] leading-relaxed line-clamp-2">{p.desc}</p>
               </div>
