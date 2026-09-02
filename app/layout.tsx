@@ -42,11 +42,16 @@ export const metadata: Metadata = {
     "Hire graphic designer",
   ],
   authors: [{ name: "Fauzia Shafi" }],
+  icons: {
+    icon: "/dp.jpg",
+    apple: "/dp.jpg",
+  },
   openGraph: {
     title: "Custom Social Media & Brand Designs by Fauzia Shafi",
     description:
       "Instagram, LinkedIn, Facebook, X, YouTube — every platform, one designer.",
     type: "website",
+    images: [{ url: "/dp.jpg", width: 400, height: 400 }],
   },
 };
 
