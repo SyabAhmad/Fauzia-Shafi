@@ -137,8 +137,8 @@ export default function Work() {
                 </div>
                 <div className="absolute inset-0 flex items-center justify-center p-3">
                   <div className="text-center">
-                    <p className="font-script text-xl text-cream/90 leading-tight">{p.client}</p>
-                    <p className="font-display font-black text-cream text-sm mt-1">{p.title}</p>
+                    <p className="font-script text-3xl sm:text-4xl text-cream/90 leading-tight">{p.client}</p>
+                    <p className="font-display font-black text-cream text-base sm:text-lg mt-1">{p.title}</p>
                   </div>
                 </div>
               </div>
