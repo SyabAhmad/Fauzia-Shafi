@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import { Menu, ArrowRight } from "lucide-react";
 
 const links = [
   { label: "Services", href: "#services" },
@@ -57,7 +58,7 @@ export default function Navbar() {
           className="hidden md:inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-rose text-ink text-sm font-bold hover:bg-blush transition-all hover:scale-105 hover:shadow-[0_10px_25px_-8px_rgba(226,149,148,0.7)]"
         >
           BOOK NOW
-          <span aria-hidden>→</span>
+          <ArrowRight className="w-4 h-4" />
         </a>
 
         <button
@@ -65,7 +66,7 @@ export default function Navbar() {
           onClick={() => setOpen((v) => !v)}
           className="md:hidden w-10 h-10 rounded-full border border-rose/40 text-rose flex items-center justify-center"
         >
-          <span className="block w-4 h-px bg-rose shadow-[0_-5px_0_0_currentColor,0_5px_0_0_currentColor]" />
+          <Menu className="w-5 h-5" />
         </button>
       </nav>
 

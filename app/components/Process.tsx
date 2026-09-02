@@ -1,27 +1,36 @@
+import {
+  MessageSquare,
+  Pencil,
+  RotateCw,
+  Rocket,
+  Star,
+  Quote,
+} from "lucide-react";
+
 const steps = [
   {
     n: "01",
     title: "Tell me what you need",
     desc: "Drop a message with your platform, vibe and references — Instagram, LinkedIn, banner, ad — whatever it is.",
-    icon: "💬",
+    icon: MessageSquare,
   },
   {
     n: "02",
     title: "I sketch the concept",
     desc: "I share 2-3 mockup directions within 24 hours so you can pick the vibe that fits you best.",
-    icon: "✏️",
+    icon: Pencil,
   },
   {
     n: "03",
     title: "Unlimited revisions",
     desc: "We tweak until it's perfect. No extra charge for revisions — your satisfaction is everything.",
-    icon: "🔁",
+    icon: RotateCw,
   },
   {
     n: "04",
     title: "Final files delivered",
     desc: "You get high-res PNG, JPG, PDF + editable Canva link — ready to post anywhere, anytime.",
-    icon: "🚀",
+    icon: Rocket,
   },
 ];
 
@@ -58,31 +67,32 @@ export default function Process() {
         </div>
 
         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-5 relative">
-          {/* Connecting line */}
           <div className="hidden lg:block absolute top-12 left-[12%] right-[12%] h-0.5 bg-gradient-to-r from-transparent via-rose/40 to-transparent" />
 
-          {steps.map((s) => (
-            <div
-              key={s.n}
-              className="relative rounded-3xl border-2 border-rose/20 bg-ink/70 backdrop-blur p-7 card-hover text-center"
-            >
-              <div className="mx-auto w-16 h-16 rounded-2xl bg-gradient-to-br from-rose to-blush flex items-center justify-center text-3xl shadow-lg relative z-10">
-                {s.icon}
+          {steps.map((s) => {
+            const Icon = s.icon;
+            return (
+              <div
+                key={s.n}
+                className="relative rounded-3xl border-2 border-rose/20 bg-ink/70 backdrop-blur p-7 card-hover text-center"
+              >
+                <div className="mx-auto w-16 h-16 rounded-2xl bg-gradient-to-br from-rose to-blush flex items-center justify-center shadow-lg relative z-10">
+                  <Icon className="w-7 h-7 text-ink" strokeWidth={2.4} />
+                </div>
+                <p className="mt-5 font-display font-black text-rose/40 text-4xl">
+                  {s.n}
+                </p>
+                <h3 className="mt-2 font-display font-black text-cream text-xl">
+                  {s.title}
+                </h3>
+                <p className="mt-3 text-blush/80 text-sm leading-relaxed">
+                  {s.desc}
+                </p>
               </div>
-              <p className="mt-5 font-display font-black text-rose/40 text-4xl">
-                {s.n}
-              </p>
-              <h3 className="mt-2 font-display font-black text-cream text-xl">
-                {s.title}
-              </h3>
-              <p className="mt-3 text-blush/80 text-sm leading-relaxed">
-                {s.desc}
-              </p>
-            </div>
-          ))}
+            );
+          })}
         </div>
 
-        {/* Testimonials */}
         <div id="reviews" className="mt-24">
           <div className="text-center mb-12">
             <p className="font-script text-3xl text-rose">what clients say</p>
@@ -97,12 +107,13 @@ export default function Process() {
                 key={t.name}
                 className="relative rounded-3xl border-2 border-rose/20 bg-ink/70 backdrop-blur p-7 card-hover"
               >
-                <div className="absolute -top-3 left-7 text-rose text-6xl font-display leading-none">
-                  &ldquo;
-                </div>
-                <div className="flex gap-1 text-rose mt-2">
+                <Quote
+                  className="absolute -top-3 left-7 w-12 h-12 text-rose fill-rose"
+                  strokeWidth={0}
+                />
+                <div className="flex gap-1 text-rose mt-3">
                   {Array(t.rating).fill(0).map((_, j) => (
-                    <span key={j}>★</span>
+                    <Star key={j} className="w-4 h-4 fill-rose text-rose" />
                   ))}
                 </div>
                 <p className="mt-4 text-blush/90 leading-relaxed">{t.text}</p>

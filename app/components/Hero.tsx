@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { ArrowRight, Sparkles } from "lucide-react";
 
 export default function Hero() {
   return (
@@ -6,12 +7,10 @@ export default function Hero() {
       id="top"
       className="relative pt-28 pb-16 sm:pt-32 sm:pb-20 overflow-hidden bg-grid"
     >
-      {/* Decorative blobs */}
       <div className="pointer-events-none absolute -top-32 -right-32 w-[500px] h-[500px] rounded-full bg-rose/30 blur-3xl animate-float-slow" />
       <div className="pointer-events-none absolute top-60 -left-32 w-[400px] h-[400px] rounded-full bg-blush/20 blur-3xl animate-float-slower" />
       <div className="pointer-events-none absolute top-1/2 left-1/2 -translate-x-1/2 w-[700px] h-[700px] rounded-full bg-rose/5 blur-3xl" />
 
-      {/* Marquee strip */}
       <div className="relative overflow-hidden border-y border-rose/20 bg-ink/60 backdrop-blur py-3 mb-16">
         <div className="flex gap-12 animate-marquee whitespace-nowrap font-display font-bold text-rose/80 uppercase tracking-widest text-sm">
           {Array(2).fill(0).map((_, i) => (
@@ -32,14 +31,13 @@ export default function Hero() {
 
       <div className="relative max-w-7xl mx-auto px-5 sm:px-8">
         <div className="text-center max-w-5xl mx-auto">
-          {/* Handwritten kicker */}
           <div className="inline-flex items-center gap-3 px-5 py-2 rounded-full bg-rose/10 border border-rose/30 backdrop-blur mb-8">
+            <Sparkles className="w-4 h-4 text-rose" />
             <span className="font-script text-rose text-2xl">hi, i&apos;m</span>
             <span className="font-bold text-cream tracking-wider">FAUZIA SHAFI</span>
             <span className="text-rose">✦</span>
           </div>
 
-          {/* Mega headline */}
           <h1 className="font-display font-black text-cream leading-[0.92] tracking-tight">
             <span className="block text-[clamp(3rem,9vw,7.5rem)]">I DESIGN</span>
             <span className="block font-script text-shimmer text-[clamp(3.5rem,11vw,9rem)] leading-[0.95] py-2">
@@ -62,9 +60,7 @@ export default function Hero() {
               className="group inline-flex items-center gap-3 px-8 py-4 rounded-full bg-rose text-ink font-black text-lg hover:bg-blush transition-all hover:scale-105 hover:shadow-[0_20px_40px_-12px_rgba(226,149,148,0.8)]"
             >
               I NEED DESIGNS
-              <span className="transition-transform group-hover:translate-x-1">
-                →
-              </span>
+              <ArrowRight className="w-5 h-5 transition-transform group-hover:translate-x-1" />
             </a>
             <a
               href="#work"
@@ -74,7 +70,6 @@ export default function Hero() {
             </a>
           </div>
 
-          {/* Trust badges */}
           <div className="mt-12 flex flex-wrap items-center justify-center gap-x-8 gap-y-3 text-sm">
             <div className="flex items-center gap-2 text-blush/80">
               <span className="text-rose text-lg">★</span>
@@ -96,9 +91,7 @@ export default function Hero() {
           </div>
         </div>
 
-        {/* Big showcase collage */}
         <div className="relative mt-20 grid grid-cols-12 gap-4 sm:gap-6">
-          {/* Main hero card */}
           <div className="col-span-12 md:col-span-7 relative group">
             <div className="absolute -inset-4 bg-gradient-to-br from-rose/30 to-blush/20 rounded-[2rem] blur-2xl opacity-60 group-hover:opacity-100 transition-opacity" />
             <div className="relative aspect-[4/3] rounded-3xl overflow-hidden border-2 border-rose/30 shadow-2xl">
@@ -122,7 +115,6 @@ export default function Hero() {
             </div>
           </div>
 
-          {/* Side stack */}
           <div className="col-span-12 md:col-span-5 grid grid-cols-2 gap-4 sm:gap-6">
             <div className="relative aspect-square rounded-3xl overflow-hidden border-2 border-rose/30 group card-hover">
               <Image src="/cover.jpg" alt="DP design" fill className="object-cover" />
@@ -150,7 +142,6 @@ export default function Hero() {
             </div>
           </div>
 
-          {/* Floating tag */}
           <div className="hidden md:block absolute -top-6 left-1/2 -translate-x-1/2 font-script text-3xl text-rose rotate-[-3deg]">
             ↓ scroll to see more
           </div>

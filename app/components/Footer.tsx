@@ -1,3 +1,4 @@
+import { Mail } from "lucide-react";
 import { profile } from "../data";
 
 export default function Footer() {
@@ -20,7 +21,11 @@ export default function Footer() {
               aria-label="Instagram"
               className="w-11 h-11 rounded-full border-2 border-rose/40 text-rose flex items-center justify-center hover:bg-rose hover:text-ink transition-all"
             >
-              📸
+              <svg viewBox="0 0 24 24" fill="none" className="w-5 h-5">
+                <rect x="3" y="3" width="18" height="18" rx="5" stroke="currentColor" strokeWidth="2" />
+                <circle cx="12" cy="12" r="4" stroke="currentColor" strokeWidth="2" />
+                <circle cx="17.5" cy="6.5" r="1" fill="currentColor" />
+              </svg>
             </a>
             <a
               href={profile.behance}
@@ -29,14 +34,16 @@ export default function Footer() {
               aria-label="Behance"
               className="w-11 h-11 rounded-full border-2 border-rose/40 text-rose flex items-center justify-center hover:bg-rose hover:text-ink transition-all"
             >
-              🅱️
+              <span className="font-display font-black text-base leading-none">
+                Bē
+              </span>
             </a>
             <a
               href={`mailto:${profile.email}`}
               aria-label="Email"
               className="w-11 h-11 rounded-full border-2 border-rose/40 text-rose flex items-center justify-center hover:bg-rose hover:text-ink transition-all"
             >
-              ✉️
+              <Mail className="w-5 h-5" />
             </a>
           </div>
 
