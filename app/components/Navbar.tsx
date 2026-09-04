@@ -4,12 +4,7 @@ import { useEffect, useState } from "react";
 import { Menu, ArrowRight } from "lucide-react";
 
 const links = [
-  { label: "Services", href: "#services" },
   { label: "Portfolio", href: "/portfolio" },
-  { label: "Work", href: "#work" },
-  { label: "Process", href: "#process" },
-  { label: "Pricing", href: "#pricing" },
-  { label: "Reviews", href: "#reviews" },
   { label: "Hire Me", href: "#hire" },
 ];
 
