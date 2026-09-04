@@ -17,7 +17,7 @@ export default function Home() {
     <>
       <Navbar />
       <main className="relative">
-        <Marquee items={marquee1} speed={35} className="border-b border-rose/10" />
+        <Marquee items={marquee1} speed={35} className="pt-20 border-b border-rose/10" />
         <Hero />
         <Services />
         <Marquee items={marquee2} speed={45} reverse className="border-y border-rose/10" />
