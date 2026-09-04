@@ -11,24 +11,6 @@ export default function Hero() {
       <div className="pointer-events-none absolute top-60 -left-32 w-[400px] h-[400px] rounded-full bg-blush/20 blur-3xl animate-float-slower" />
       <div className="pointer-events-none absolute top-1/2 left-1/2 -translate-x-1/2 w-[700px] h-[700px] rounded-full bg-rose/5 blur-3xl" />
 
-      <div className="relative overflow-hidden border-y border-rose/20 bg-ink/60 backdrop-blur py-3 mb-16">
-        <div className="flex gap-12 animate-marquee whitespace-nowrap font-display font-bold text-rose/80 uppercase tracking-widest text-sm">
-          {Array(2).fill(0).map((_, i) => (
-            <div key={i} className="flex gap-12 shrink-0">
-              <span>✦ Instagram Posts</span>
-              <span>★ LinkedIn Banners</span>
-              <span>✦ Facebook Ads</span>
-              <span>★ Profile Pictures</span>
-              <span>✦ Posters & Flyers</span>
-              <span>★ Brand Identity</span>
-              <span>✦ X / Twitter Headers</span>
-              <span>★ YouTube Thumbnails</span>
-              <span>✦ Ad Creatives</span>
-            </div>
-          ))}
-        </div>
-      </div>
-
       <div className="relative max-w-7xl mx-auto px-5 sm:px-8">
         <div className="text-center max-w-5xl mx-auto">
           <div className="inline-flex items-center gap-3 px-5 py-2 rounded-full bg-rose/10 border border-rose/30 backdrop-blur mb-8">
@@ -69,29 +51,9 @@ export default function Hero() {
               SEE EXAMPLES
             </a>
           </div>
-
-          <div className="mt-12 flex flex-wrap items-center justify-center gap-x-8 gap-y-3 text-sm">
-            <div className="flex items-center gap-2 text-blush/80">
-              <span className="text-rose text-lg">★</span>
-              <span className="font-bold text-cream">50+</span>
-              <span>designs delivered</span>
-            </div>
-            <span className="text-rose/40">•</span>
-            <div className="flex items-center gap-2 text-blush/80">
-              <span className="text-rose text-lg">★</span>
-              <span className="font-bold text-cream">24h</span>
-              <span>turnaround</span>
-            </div>
-            <span className="text-rose/40">•</span>
-            <div className="flex items-center gap-2 text-blush/80">
-              <span className="text-rose text-lg">★</span>
-              <span className="font-bold text-cream">100%</span>
-              <span>satisfaction</span>
-            </div>
-          </div>
         </div>
 
-        <div className="relative mt-20 grid grid-cols-12 gap-4 sm:gap-6">
+          <div className="relative mt-20 grid grid-cols-12 gap-4 sm:gap-6">
           <div className="col-span-12 md:col-span-7 relative group">
             <div className="absolute -inset-4 bg-gradient-to-br from-rose/30 to-blush/20 rounded-[2rem] blur-2xl opacity-60 group-hover:opacity-100 transition-opacity" />
             <div className="relative aspect-[4/3] rounded-3xl overflow-hidden border-2 border-rose/30 shadow-2xl">
