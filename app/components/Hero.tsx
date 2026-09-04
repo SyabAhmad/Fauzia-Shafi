@@ -63,7 +63,7 @@ export default function Hero() {
               <ArrowRight className="w-5 h-5 transition-transform group-hover:translate-x-1" />
             </a>
             <a
-              href="#work"
+              href="/portfolio"
               className="inline-flex items-center gap-3 px-8 py-4 rounded-full border-2 border-rose/50 text-cream font-bold text-lg hover:border-rose hover:bg-rose/10 transition-all"
             >
               SEE EXAMPLES

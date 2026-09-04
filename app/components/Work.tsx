@@ -170,9 +170,14 @@ export default function Work() {
           <h3 className="mt-3 font-display font-black text-cream text-3xl sm:text-5xl leading-tight">
             LET&apos;S DESIGN <span className="italic text-rose">YOURS.</span>
           </h3>
-          <a href="#hire" className="mt-6 inline-flex items-center gap-3 px-8 py-4 rounded-full bg-rose text-ink font-black text-lg hover:bg-blush transition-all hover:scale-105">
-            START YOUR PROJECT →
-          </a>
+          <div className="mt-6 flex flex-wrap gap-3 justify-center">
+            <a href="#hire" className="inline-flex items-center gap-3 px-8 py-4 rounded-full bg-rose text-ink font-black text-lg hover:bg-blush transition-all hover:scale-105">
+              START YOUR PROJECT →
+            </a>
+            <a href="/portfolio" className="inline-flex items-center gap-3 px-8 py-4 rounded-full border-2 border-cream/30 text-cream font-bold text-lg hover:border-cream hover:bg-cream/10 transition-all">
+              VIEW FULL PORTFOLIO →
+            </a>
+          </div>
         </div>
       </div>
     </section>
