@@ -137,7 +137,7 @@ export default function PortfolioPage() {
         </div>
 
         {/* Masonry grid — true pinterest */}
-        <div className="columns-1 sm:columns-2 lg:columns-3 xl:columns-4 gap-3 space-y-3">
+        <div className="grid grid-cols-2 sm:columns-2 lg:columns-3 xl:columns-4 gap-2 sm:gap-3 sm:space-y-0 space-y-2">
           {filtered.map((c, i) => (
             <div
               key={`${c.src}-${i}`}

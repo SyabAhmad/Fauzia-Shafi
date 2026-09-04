@@ -85,6 +85,12 @@ export default function Footer() {
                 </svg>
               </a>
               <a
+                href="/portfolio"
+                className="w-11 h-11 rounded-full border-2 border-rose/40 text-rose flex items-center justify-center hover:bg-rose hover:text-ink transition-all"
+              >
+                <span className="font-display font-black text-[11px]">P</span>
+              </a>
+              <a
                 href={profile.behance}
                 target="_blank"
                 rel="noopener noreferrer"

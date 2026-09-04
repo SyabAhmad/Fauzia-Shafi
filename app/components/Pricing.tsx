@@ -69,8 +69,8 @@ export default function Pricing() {
           </h2>
         </div>
 
-        {/* Desktop — 3 col */}
-        <div className="hidden md:grid md:grid-cols-3 gap-6">
+        {/* Desktop — 4 col */}
+        <div className="hidden md:grid md:grid-cols-4 gap-6">
           {plans.map((p) => (
             <div
               key={p.name}
@@ -111,6 +111,19 @@ export default function Pricing() {
               </a>
             </div>
           ))}
+          <div className="relative rounded-3xl p-8 card-hover border-2 border-dashed border-rose/30 bg-white/[0.02] flex flex-col items-center justify-center text-center">
+            <p className="font-script text-2xl text-rose">need something else?</p>
+            <h3 className="mt-1 font-display font-black text-cream text-2xl">CUSTOM</h3>
+            <p className="mt-4 text-blush/70 text-sm leading-relaxed">
+              Bundle deals, monthly retainers, rush orders, or bulk pricing — let&apos;s talk.
+            </p>
+            <a
+              href="#hire"
+              className="mt-6 block text-center px-6 py-3.5 rounded-full border-2 border-rose/40 text-cream font-black hover:border-rose hover:bg-rose/10 transition-all"
+            >
+              GET IN TOUCH
+            </a>
+          </div>
         </div>
 
         {/* Mobile — 2-col pinterest */}
@@ -155,6 +168,19 @@ export default function Pricing() {
               </a>
             </div>
           ))}
+          <div className="relative rounded-2xl p-4 card-hover border border-dashed border-rose/30 bg-white/[0.02] price-short flex flex-col items-center justify-center text-center">
+            <p className="font-script text-xl text-rose">need something else?</p>
+            <h3 className="mt-0.5 font-display font-black text-cream text-xl">CUSTOM</h3>
+            <p className="mt-3 text-blush/70 text-[10px] leading-relaxed">
+              Bundle deals, retainers, rush orders, or bulk pricing.
+            </p>
+            <a
+              href="#hire"
+              className="mt-4 block text-center px-4 py-2.5 rounded-full border border-rose/40 text-cream font-black text-xs hover:border-rose hover:bg-rose/10 transition-all"
+            >
+              GET IN TOUCH
+            </a>
+          </div>
         </div>
 
         <p className="mt-10 text-center text-stone text-sm">
