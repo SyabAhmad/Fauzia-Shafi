@@ -109,7 +109,7 @@ const images = [
     crops: [
       { name: 'test-chat', top: 0, left: 0, width: 0.55, height: 0.6 },
       { name: 'test-quote', top: 0.35, left: 0.4, width: 0.6, height: 0.65 },
-      { name: 'test-profile', top: 0, left: 0.5, width: 0.5, height: 0.4 },
+      { name: 'test-profile', top: 0, left: 0, width: 0.5, height: 0.4 },
     ],
   },
 ];
