@@ -137,7 +137,7 @@ export default function PortfolioPage() {
         </div>
 
         {/* Masonry grid — true pinterest */}
-        <div className="grid grid-cols-2 sm:columns-2 lg:columns-3 xl:columns-4 gap-2 sm:gap-3 sm:space-y-0 space-y-2">
+        <div className="columns-2 lg:columns-3 xl:columns-4 gap-2 sm:gap-3 space-y-2 sm:space-y-3">
           {filtered.map((c, i) => (
             <div
               key={`${c.src}-${i}`}
@@ -152,10 +152,10 @@ export default function PortfolioPage() {
                   height={800}
                   className="w-full h-auto"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-ink via-ink/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-                <div className="absolute bottom-0 left-0 right-0 p-4 translate-y-2 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-300">
-                  <p className="font-display font-black text-cream text-sm">{c.title}</p>
-                  <p className="text-rose/80 text-xs">{c.sub}</p>
+                <div className="absolute inset-0 bg-gradient-to-t from-ink via-ink/10 to-transparent pointer-events-none sm:opacity-0 sm:group-hover:opacity-100 transition-opacity duration-300" />
+                <div className="absolute bottom-0 left-0 right-0 p-3 sm:p-4 translate-y-2 sm:translate-y-2 sm:opacity-0 sm:group-hover:translate-y-0 sm:group-hover:opacity-100 transition-all duration-300">
+                  <p className="font-display font-black text-cream text-xs sm:text-sm">{c.title}</p>
+                  <p className="text-rose/80 text-[10px] sm:text-xs">{c.sub}</p>
                 </div>
               </div>
             </div>
