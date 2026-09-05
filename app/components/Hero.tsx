@@ -7,13 +7,11 @@ export default function Hero() {
       id="top"
       className="relative pt-28 pb-16 sm:pt-32 sm:pb-20 overflow-hidden bg-grid"
     >
-      <div className="pointer-events-none absolute -top-32 -right-32 w-[500px] h-[500px] rounded-full bg-rose/30 blur-3xl animate-float-slow" />
-      <div className="pointer-events-none absolute top-60 -left-32 w-[400px] h-[400px] rounded-full bg-blush/20 blur-3xl animate-float-slower" />
-      <div className="pointer-events-none absolute top-1/2 left-1/2 -translate-x-1/2 w-[700px] h-[700px] rounded-full bg-rose/5 blur-3xl" />
+      <div className="pointer-events-none absolute top-1/3 left-1/2 -translate-x-1/2 w-[400px] h-[400px] rounded-full bg-rose/10 blur-3xl" />
 
       <div className="relative max-w-7xl mx-auto px-5 sm:px-8">
         <div className="text-center max-w-5xl mx-auto">
-          <div className="inline-flex items-center gap-3 px-5 py-2 rounded-full bg-rose/10 border border-rose/30 backdrop-blur mb-8">
+          <div className="inline-flex items-center gap-3 px-5 py-2 rounded-full bg-rose/10 border border-rose/30 mb-8">
             <Sparkles className="w-4 h-4 text-rose" />
             <span className="font-script text-rose text-2xl">hi, i&apos;m</span>
             <span className="font-bold text-cream tracking-wider">FAUZIA SHAFI</span>
@@ -70,7 +68,7 @@ export default function Hero() {
                   <p className="font-script text-3xl text-rose">Featured work</p>
                   <p className="text-cream font-display text-xl">Brand Posters</p>
                 </div>
-                <span className="px-3 py-1 rounded-full bg-ink/80 backdrop-blur text-xs text-rose font-bold border border-rose/30">
+                <span className="px-3 py-1 rounded-full bg-ink/80 text-xs text-rose font-bold border border-rose/30">
                   SOCIAL POST
                 </span>
               </div>

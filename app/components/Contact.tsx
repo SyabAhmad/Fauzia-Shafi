@@ -136,7 +136,7 @@ export default function Contact() {
         </div>
 
         {/* Form */}
-        <div className="mt-10 rounded-2xl sm:rounded-3xl border border-rose/30 bg-ink/70 backdrop-blur p-5 sm:p-10">
+        <div className="mt-10 rounded-2xl sm:rounded-3xl border border-rose/30 bg-ink/70 p-5 sm:p-10">
           <p className="font-script text-xl sm:text-2xl text-rose text-center">
             or just drop your details here
           </p>

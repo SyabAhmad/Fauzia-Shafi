@@ -164,7 +164,7 @@ export default function Services() {
           {services.map((s, i) => (
             <div
               key={s.title}
-              className="group relative rounded-2xl border border-white/[0.06] bg-white/[0.03] backdrop-blur-sm overflow-hidden hover:bg-white/[0.06] transition-all duration-500"
+              className="group relative rounded-2xl border border-white/[0.06] bg-white/[0.03] overflow-hidden hover:bg-white/[0.06] transition-all duration-500"
             >
               <div className="absolute top-0 left-0 w-0 h-full group-hover:w-1 transition-all duration-500" style={{ backgroundColor: s.color }} />
               <div className="flex flex-col sm:flex-row items-stretch">
@@ -219,7 +219,7 @@ export default function Services() {
           {services.map((s) => (
             <div
               key={s.title}
-              className={`group relative rounded-2xl border border-white/[0.08] bg-white/[0.04] backdrop-blur-sm overflow-hidden hover:bg-white/[0.08] transition-all duration-500 ${s.tall ? "card-tall" : "card-short"}`}
+              className={`group relative rounded-2xl border border-white/[0.08] bg-white/[0.04] overflow-hidden hover:bg-white/[0.08] transition-all duration-500 ${s.tall ? "card-tall" : "card-short"}`}
             >
               <div className="absolute top-0 left-0 w-full h-0.5 group-hover:h-1.5 transition-all duration-500" style={{ backgroundColor: s.color }} />
 

@@ -67,7 +67,7 @@ export default function Navbar() {
       </nav>
 
       {open && (
-        <div className="md:hidden border-t border-rose/15 bg-ink/95 backdrop-blur-xl">
+        <div className="md:hidden border-t border-rose/15 bg-ink/95">
           <ul className="px-6 py-4 grid gap-1">
             {links.map((l) => (
               <li key={l.href}>

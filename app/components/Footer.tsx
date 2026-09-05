@@ -28,7 +28,7 @@ export default function Footer() {
   return (
     <footer className="relative border-t border-rose/20">
       {/* Testimonials strip */}
-      <div className="border-b border-rose/10 bg-ink/80 backdrop-blur py-10">
+      <div className="border-b border-rose/10 bg-ink/80 py-10">
         <div className="max-w-7xl mx-auto px-5 sm:px-8">
           <p className="font-script text-center text-2xl text-rose mb-8">
             what clients say...

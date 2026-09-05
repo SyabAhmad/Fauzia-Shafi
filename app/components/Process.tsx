@@ -85,7 +85,7 @@ export default function Process() {
           {steps.map((s) => {
             const Icon = s.icon;
             return (
-              <div key={s.n} className="relative rounded-3xl border-2 border-rose/20 bg-ink/70 backdrop-blur p-7 card-hover text-center">
+              <div key={s.n} className="relative rounded-3xl border-2 border-rose/20 bg-ink/70  p-7 card-hover text-center">
                 <div className="mx-auto w-16 h-16 rounded-2xl bg-gradient-to-br from-rose to-blush flex items-center justify-center shadow-lg relative z-10">
                   <Icon className="w-7 h-7 text-ink" strokeWidth={2.4} />
                 </div>
@@ -102,7 +102,7 @@ export default function Process() {
           {steps.map((s) => {
             const Icon = s.icon;
             return (
-              <div key={s.n} className={`relative rounded-2xl border-2 border-rose/20 bg-ink/70 backdrop-blur p-5 card-hover text-center ${s.tall ? "step-tall" : "step-short"}`}>
+              <div key={s.n} className={`relative rounded-2xl border-2 border-rose/20 bg-ink/70  p-5 card-hover text-center ${s.tall ? "step-tall" : "step-short"}`}>
                 <div className="mx-auto w-12 h-12 rounded-xl bg-gradient-to-br from-rose to-blush flex items-center justify-center shadow-lg">
                   <Icon className="w-5 h-5 text-ink" strokeWidth={2.4} />
                 </div>
@@ -125,7 +125,7 @@ export default function Process() {
           {/* Desktop — 3 col, mobile 1 col */}
           <div className="grid md:grid-cols-3 gap-5">
             {testimonials.map((t) => (
-              <div key={t.name} className="relative rounded-3xl border-2 border-rose/20 bg-ink/70 backdrop-blur p-7 card-hover">
+              <div key={t.name} className="relative rounded-3xl border-2 border-rose/20 bg-ink/70  p-7 card-hover">
                 <Quote className="absolute -top-3 left-7 w-10 h-10 text-rose fill-rose" strokeWidth={0} />
                 <div className="flex gap-1 text-rose mt-3">
                   {Array(t.rating).fill(0).map((_, j) => (

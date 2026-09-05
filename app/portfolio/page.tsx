@@ -18,64 +18,64 @@ const categories = [
 ];
 
 const crops = [
-  { src: "/portfolio/crops/novastep-logo.png", title: "Novastep", sub: "Logo Design", cat: "brand-kit", full: "/portfolio/novastep-brand-kit.png" },
-  { src: "/portfolio/crops/novastep-typography.png", title: "Novastep", sub: "Typography", cat: "brand-kit", full: "/portfolio/novastep-brand-kit.png" },
-  { src: "/portfolio/crops/novastep-palette.png", title: "Novastep", sub: "Color Palette", cat: "brand-kit", full: "/portfolio/novastep-brand-kit.png" },
-  { src: "/portfolio/crops/novastep-ad.png", title: "Novastep", sub: "Ad Design", cat: "brand-kit", full: "/portfolio/novastep-brand-kit.png" },
-  { src: "/portfolio/crops/novastep-packaging.png", title: "Novastep", sub: "Packaging", cat: "brand-kit", full: "/portfolio/novastep-brand-kit.png" },
-  { src: "/portfolio/crops/novastep-mockups.png", title: "Novastep", sub: "Social Mockups", cat: "brand-kit", full: "/portfolio/novastep-brand-kit.png" },
+  { src: "/portfolio/crops/novastep-logo.jpg", title: "Novastep", sub: "Logo Design", cat: "brand-kit", full: "/portfolio/novastep-brand-kit.jpg" },
+  { src: "/portfolio/crops/novastep-typography.jpg", title: "Novastep", sub: "Typography", cat: "brand-kit", full: "/portfolio/novastep-brand-kit.jpg" },
+  { src: "/portfolio/crops/novastep-palette.jpg", title: "Novastep", sub: "Color Palette", cat: "brand-kit", full: "/portfolio/novastep-brand-kit.jpg" },
+  { src: "/portfolio/crops/novastep-ad.jpg", title: "Novastep", sub: "Ad Design", cat: "brand-kit", full: "/portfolio/novastep-brand-kit.jpg" },
+  { src: "/portfolio/crops/novastep-packaging.jpg", title: "Novastep", sub: "Packaging", cat: "brand-kit", full: "/portfolio/novastep-brand-kit.jpg" },
+  { src: "/portfolio/crops/novastep-mockups.jpg", title: "Novastep", sub: "Social Mockups", cat: "brand-kit", full: "/portfolio/novastep-brand-kit.jpg" },
 
-  { src: "/portfolio/crops/logo-aura-royale.png", title: "Aura Royale", sub: "Emblem Logo", cat: "logo", full: "/portfolio/logo-collection.png" },
-  { src: "/portfolio/crops/logo-belora.png", title: "Belora", sub: "Combination Mark", cat: "logo", full: "/portfolio/logo-collection.png" },
-  { src: "/portfolio/crops/logo-royaluxe.png", title: "Royaluxe", sub: "Monogram", cat: "logo", full: "/portfolio/logo-collection.png" },
-  { src: "/portfolio/crops/logo-pizzaio.png", title: "Pizzaio", sub: "Mascot Logo", cat: "logo", full: "/portfolio/logo-collection.png" },
-  { src: "/portfolio/crops/logo-altivia.png", title: "Altivia", sub: "Abstract Mark", cat: "logo", full: "/portfolio/logo-collection.png" },
-  { src: "/portfolio/crops/logo-natura.png", title: "Natura", sub: "Pictorial Mark", cat: "logo", full: "/portfolio/logo-collection.png" },
+  { src: "/portfolio/crops/logo-aura-royale.jpg", title: "Aura Royale", sub: "Emblem Logo", cat: "logo", full: "/portfolio/logo-collection.jpg" },
+  { src: "/portfolio/crops/logo-belora.jpg", title: "Belora", sub: "Combination Mark", cat: "logo", full: "/portfolio/logo-collection.jpg" },
+  { src: "/portfolio/crops/logo-royaluxe.jpg", title: "Royaluxe", sub: "Monogram", cat: "logo", full: "/portfolio/logo-collection.jpg" },
+  { src: "/portfolio/crops/logo-pizzaio.jpg", title: "Pizzaio", sub: "Mascot Logo", cat: "logo", full: "/portfolio/logo-collection.jpg" },
+  { src: "/portfolio/crops/logo-altivia.jpg", title: "Altivia", sub: "Abstract Mark", cat: "logo", full: "/portfolio/logo-collection.jpg" },
+  { src: "/portfolio/crops/logo-natura.jpg", title: "Natura", sub: "Pictorial Mark", cat: "logo", full: "/portfolio/logo-collection.jpg" },
 
-  { src: "/portfolio/crops/noor-overview.png", title: "Noor Sweets", sub: "Brand Overview", cat: "brand-kit", full: "/portfolio/noor-sweets-brand-kit.png" },
-  { src: "/portfolio/crops/noor-logo-close.png", title: "Noor Sweets", sub: "Logo Detail", cat: "brand-kit", full: "/portfolio/noor-sweets-brand-kit.png" },
-  { src: "/portfolio/crops/noor-bags.png", title: "Noor Sweets", sub: "Packaging Bags", cat: "brand-kit", full: "/portfolio/noor-sweets-brand-kit.png" },
-  { src: "/portfolio/crops/noor-apron.png", title: "Noor Sweets", sub: "Merchandise", cat: "brand-kit", full: "/portfolio/noor-sweets-brand-kit.png" },
-  { src: "/portfolio/crops/noor-box.png", title: "Noor Sweets", sub: "Box Design", cat: "brand-kit", full: "/portfolio/noor-sweets-brand-kit.png" },
-  { src: "/portfolio/crops/noor-social.png", title: "Noor Sweets", sub: "Social Posts", cat: "brand-kit", full: "/portfolio/noor-sweets-brand-kit.png" },
+  { src: "/portfolio/crops/noor-overview.jpg", title: "Noor Sweets", sub: "Brand Overview", cat: "brand-kit", full: "/portfolio/noor-sweets-brand-kit.jpg" },
+  { src: "/portfolio/crops/noor-logo-close.jpg", title: "Noor Sweets", sub: "Logo Detail", cat: "brand-kit", full: "/portfolio/noor-sweets-brand-kit.jpg" },
+  { src: "/portfolio/crops/noor-bags.jpg", title: "Noor Sweets", sub: "Packaging Bags", cat: "brand-kit", full: "/portfolio/noor-sweets-brand-kit.jpg" },
+  { src: "/portfolio/crops/noor-apron.jpg", title: "Noor Sweets", sub: "Merchandise", cat: "brand-kit", full: "/portfolio/noor-sweets-brand-kit.jpg" },
+  { src: "/portfolio/crops/noor-box.jpg", title: "Noor Sweets", sub: "Box Design", cat: "brand-kit", full: "/portfolio/noor-sweets-brand-kit.jpg" },
+  { src: "/portfolio/crops/noor-social.jpg", title: "Noor Sweets", sub: "Social Posts", cat: "brand-kit", full: "/portfolio/noor-sweets-brand-kit.jpg" },
 
-  { src: "/portfolio/crops/ad-iphone.png", title: "iPhone 17", sub: "Product Ad", cat: "ads", full: "/portfolio/product-ads.png" },
-  { src: "/portfolio/crops/ad-lambo.png", title: "Lamborghini", sub: "Luxury Ad", cat: "ads", full: "/portfolio/product-ads.png" },
-  { src: "/portfolio/crops/ad-toyota.png", title: "Toyota Fortuner", sub: "Automotive Ad", cat: "ads", full: "/portfolio/product-ads.png" },
-  { src: "/portfolio/crops/ad-mcdonalds.png", title: "McDonald's", sub: "Food Ad", cat: "ads", full: "/portfolio/product-ads.png" },
-  { src: "/portfolio/crops/ad-nike.png", title: "Nike Air Jordan", sub: "Sneaker Ad", cat: "ads", full: "/portfolio/product-ads.png" },
-  { src: "/portfolio/crops/ad-dior-rolex.png", title: "Dior & Rolex", sub: "Luxury Ad", cat: "ads", full: "/portfolio/product-ads.png" },
+  { src: "/portfolio/crops/ad-iphone.jpg", title: "iPhone 17", sub: "Product Ad", cat: "ads", full: "/portfolio/product-ads.jpg" },
+  { src: "/portfolio/crops/ad-lambo.jpg", title: "Lamborghini", sub: "Luxury Ad", cat: "ads", full: "/portfolio/product-ads.jpg" },
+  { src: "/portfolio/crops/ad-toyota.jpg", title: "Toyota Fortuner", sub: "Automotive Ad", cat: "ads", full: "/portfolio/product-ads.jpg" },
+  { src: "/portfolio/crops/ad-mcdonalds.jpg", title: "McDonald's", sub: "Food Ad", cat: "ads", full: "/portfolio/product-ads.jpg" },
+  { src: "/portfolio/crops/ad-nike.jpg", title: "Nike Air Jordan", sub: "Sneaker Ad", cat: "ads", full: "/portfolio/product-ads.jpg" },
+  { src: "/portfolio/crops/ad-dior-rolex.jpg", title: "Dior & Rolex", sub: "Luxury Ad", cat: "ads", full: "/portfolio/product-ads.jpg" },
 
-  { src: "/portfolio/crops/social-rayban.png", title: "Ray-Ban", sub: "Instagram Post", cat: "social", full: "/portfolio/social-media-grid.png" },
-  { src: "/portfolio/crops/social-mccafe.png", title: "McCafe", sub: "Instagram Post", cat: "social", full: "/portfolio/social-media-grid.png" },
-  { src: "/portfolio/crops/social-apple.png", title: "Apple", sub: "Instagram Post", cat: "social", full: "/portfolio/social-media-grid.png" },
-  { src: "/portfolio/crops/social-cocacola.png", title: "Coca-Cola", sub: "Instagram Post", cat: "social", full: "/portfolio/social-media-grid.png" },
-  { src: "/portfolio/crops/social-lv.png", title: "Louis Vuitton", sub: "Instagram Post", cat: "social", full: "/portfolio/social-media-grid.png" },
-  { src: "/portfolio/crops/social-oreo.png", title: "Oreo", sub: "Instagram Post", cat: "social", full: "/portfolio/social-media-grid.png" },
+  { src: "/portfolio/crops/social-rayban.jpg", title: "Ray-Ban", sub: "Instagram Post", cat: "social", full: "/portfolio/social-media-grid.jpg" },
+  { src: "/portfolio/crops/social-mccafe.jpg", title: "McCafe", sub: "Instagram Post", cat: "social", full: "/portfolio/social-media-grid.jpg" },
+  { src: "/portfolio/crops/social-apple.jpg", title: "Apple", sub: "Instagram Post", cat: "social", full: "/portfolio/social-media-grid.jpg" },
+  { src: "/portfolio/crops/social-cocacola.jpg", title: "Coca-Cola", sub: "Instagram Post", cat: "social", full: "/portfolio/social-media-grid.jpg" },
+  { src: "/portfolio/crops/social-lv.jpg", title: "Louis Vuitton", sub: "Instagram Post", cat: "social", full: "/portfolio/social-media-grid.jpg" },
+  { src: "/portfolio/crops/social-oreo.jpg", title: "Oreo", sub: "Instagram Post", cat: "social", full: "/portfolio/social-media-grid.jpg" },
 
-  { src: "/portfolio/crops/yt-beast-mode.png", title: "Beast Mode", sub: "Gaming Thumbnail", cat: "youtube", full: "/portfolio/youtube-thumbnails.png" },
-  { src: "/portfolio/crops/yt-spicy-burger.png", title: "Spicy Burger", sub: "Challenge Thumbnail", cat: "youtube", full: "/portfolio/youtube-thumbnails.png" },
-  { src: "/portfolio/crops/yt-summer-haul.png", title: "Summer Haul", sub: "Lifestyle Thumbnail", cat: "youtube", full: "/portfolio/youtube-thumbnails.png" },
-  { src: "/portfolio/crops/yt-win-or-die.png", title: "Win or Die", sub: "Gaming Thumbnail", cat: "youtube", full: "/portfolio/youtube-thumbnails.png" },
-  { src: "/portfolio/crops/yt-grow-channel.png", title: "Grow Channel", sub: "Tutorial Thumbnail", cat: "youtube", full: "/portfolio/youtube-thumbnails.png" },
+  { src: "/portfolio/crops/yt-beast-mode.jpg", title: "Beast Mode", sub: "Gaming Thumbnail", cat: "youtube", full: "/portfolio/youtube-thumbnails.jpg" },
+  { src: "/portfolio/crops/yt-spicy-burger.jpg", title: "Spicy Burger", sub: "Challenge Thumbnail", cat: "youtube", full: "/portfolio/youtube-thumbnails.jpg" },
+  { src: "/portfolio/crops/yt-summer-haul.jpg", title: "Summer Haul", sub: "Lifestyle Thumbnail", cat: "youtube", full: "/portfolio/youtube-thumbnails.jpg" },
+  { src: "/portfolio/crops/yt-win-or-die.jpg", title: "Win or Die", sub: "Gaming Thumbnail", cat: "youtube", full: "/portfolio/youtube-thumbnails.jpg" },
+  { src: "/portfolio/crops/yt-grow-channel.jpg", title: "Grow Channel", sub: "Tutorial Thumbnail", cat: "youtube", full: "/portfolio/youtube-thumbnails.jpg" },
 
-  { src: "/portfolio/crops/ba-coffee.png", title: "Coffee Brand", sub: "Before / After", cat: "before-after", full: "/portfolio/before-after-redesigns.png" },
-  { src: "/portfolio/crops/ba-shoes.png", title: "Shoe Brand", sub: "Before / After", cat: "before-after", full: "/portfolio/before-after-redesigns.png" },
-  { src: "/portfolio/crops/ba-food.png", title: "Food Brand", sub: "Before / After", cat: "before-after", full: "/portfolio/before-after-redesigns.png" },
-  { src: "/portfolio/crops/ba-perfume.png", title: "Perfume Brand", sub: "Before / After", cat: "before-after", full: "/portfolio/before-after-redesigns.png" },
-  { src: "/portfolio/crops/ba-milkshake.png", title: "Milkshake Brand", sub: "Before / After", cat: "before-after", full: "/portfolio/before-after-redesigns.png" },
-  { src: "/portfolio/crops/ba-tea.png", title: "Tea Brand", sub: "Before / After", cat: "before-after", full: "/portfolio/before-after-redesigns.png" },
+  { src: "/portfolio/crops/ba-coffee.jpg", title: "Coffee Brand", sub: "Before / After", cat: "before-after", full: "/portfolio/before-after-redesigns.jpg" },
+  { src: "/portfolio/crops/ba-shoes.jpg", title: "Shoe Brand", sub: "Before / After", cat: "before-after", full: "/portfolio/before-after-redesigns.jpg" },
+  { src: "/portfolio/crops/ba-food.jpg", title: "Food Brand", sub: "Before / After", cat: "before-after", full: "/portfolio/before-after-redesigns.jpg" },
+  { src: "/portfolio/crops/ba-perfume.jpg", title: "Perfume Brand", sub: "Before / After", cat: "before-after", full: "/portfolio/before-after-redesigns.jpg" },
+  { src: "/portfolio/crops/ba-milkshake.jpg", title: "Milkshake Brand", sub: "Before / After", cat: "before-after", full: "/portfolio/before-after-redesigns.jpg" },
+  { src: "/portfolio/crops/ba-tea.jpg", title: "Tea Brand", sub: "Before / After", cat: "before-after", full: "/portfolio/before-after-redesigns.jpg" },
 
-  { src: "/portfolio/crops/food-pizza.png", title: "Pizza Place", sub: "Menu Design", cat: "food", full: "/portfolio/food-menus.png" },
-  { src: "/portfolio/crops/food-chicken.png", title: "Fried Chicken", sub: "Ad Design", cat: "food", full: "/portfolio/food-menus.png" },
-  { src: "/portfolio/crops/food-catering.png", title: "Catering Service", sub: "Brand Design", cat: "food", full: "/portfolio/food-menus.png" },
-  { src: "/portfolio/crops/food-menu.png", title: "Beverage Menu", sub: "Menu Design", cat: "food", full: "/portfolio/food-menus.png" },
-  { src: "/portfolio/crops/food-shawarma.png", title: "Shawarma", sub: "Social Post", cat: "food", full: "/portfolio/food-menus.png" },
-  { src: "/portfolio/crops/food-yogurt.png", title: "Yogurt Brand", sub: "Ad Design", cat: "food", full: "/portfolio/food-menus.png" },
+  { src: "/portfolio/crops/food-pizza.jpg", title: "Pizza Place", sub: "Menu Design", cat: "food", full: "/portfolio/food-menus.jpg" },
+  { src: "/portfolio/crops/food-chicken.jpg", title: "Fried Chicken", sub: "Ad Design", cat: "food", full: "/portfolio/food-menus.jpg" },
+  { src: "/portfolio/crops/food-catering.jpg", title: "Catering Service", sub: "Brand Design", cat: "food", full: "/portfolio/food-menus.jpg" },
+  { src: "/portfolio/crops/food-menu.jpg", title: "Beverage Menu", sub: "Menu Design", cat: "food", full: "/portfolio/food-menus.jpg" },
+  { src: "/portfolio/crops/food-shawarma.jpg", title: "Shawarma", sub: "Social Post", cat: "food", full: "/portfolio/food-menus.jpg" },
+  { src: "/portfolio/crops/food-yogurt.jpg", title: "Yogurt Brand", sub: "Ad Design", cat: "food", full: "/portfolio/food-menus.jpg" },
 
-  { src: "/portfolio/crops/test-chat.png", title: "Client Review", sub: "Chat Screenshot", cat: "testimonials", full: "/portfolio/client-testimonials.png" },
-  { src: "/portfolio/crops/test-quote.png", title: "Client Love", sub: "Testimonial Card", cat: "testimonials", full: "/portfolio/client-testimonials.png" },
-  { src: "/portfolio/crops/test-profile.png", title: "Happy Client", sub: "Feedback", cat: "testimonials", full: "/portfolio/client-testimonials.png" },
+  { src: "/portfolio/crops/test-chat.jpg", title: "Client Review", sub: "Chat Screenshot", cat: "testimonials", full: "/portfolio/client-testimonials.jpg" },
+  { src: "/portfolio/crops/test-quote.jpg", title: "Client Love", sub: "Testimonial Card", cat: "testimonials", full: "/portfolio/client-testimonials.jpg" },
+  { src: "/portfolio/crops/test-profile.jpg", title: "Happy Client", sub: "Feedback", cat: "testimonials", full: "/portfolio/client-testimonials.jpg" },
 ];
 
 type Crop = (typeof crops)[number];
@@ -92,7 +92,7 @@ export default function PortfolioPage() {
   return (
     <div className="min-h-screen bg-ink">
       {/* Header */}
-      <div className="sticky top-0 z-50 backdrop-blur-xl bg-ink/85 border-b border-rose/15">
+      <div className="sticky top-0 z-50 bg-ink/95 border-b border-rose/15">
         <div className="max-w-7xl mx-auto px-5 sm:px-8 h-16 flex items-center justify-between">
           <Link
             href="/"
@@ -166,7 +166,7 @@ export default function PortfolioPage() {
       {/* Lightbox — shows the full original image */}
       {lightbox && (
         <div
-          className="fixed inset-0 z-[100] bg-ink/95 backdrop-blur-xl flex items-center justify-center p-4 sm:p-8"
+          className="fixed inset-0 z-[100] bg-ink/95 flex items-center justify-center p-4 sm:p-8"
           onClick={() => setLightbox(null)}
         >
           <button

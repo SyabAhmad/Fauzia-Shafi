@@ -98,7 +98,7 @@ export default function Work() {
                   <path d="M 0 200 Q 100 150, 200 200 T 400 200" stroke="white" strokeWidth="1" fill="none" />
                   <path d="M 0 250 Q 100 200, 200 250 T 400 250" stroke="white" strokeWidth="1" fill="none" />
                 </svg>
-                <div className="absolute top-4 left-4 px-3 py-1 rounded-full bg-ink/80 backdrop-blur text-xs font-bold text-rose border border-rose/30">
+                <div className="absolute top-4 left-4 px-3 py-1 rounded-full bg-ink/80 text-xs font-bold text-rose border border-rose/30">
                   {p.tag.toUpperCase()}
                 </div>
                 <div className="absolute inset-0 flex items-center justify-center">
@@ -138,7 +138,7 @@ export default function Work() {
                   <circle cx="350" cy="50" r="80" fill="none" stroke="white" strokeWidth="1.5" />
                   <path d="M 0 200 Q 100 150, 200 200 T 400 200" stroke="white" strokeWidth="1" fill="none" />
                 </svg>
-                <div className="absolute top-2 left-2 px-2 py-0.5 rounded-full bg-ink/80 backdrop-blur text-[9px] font-bold text-rose border border-rose/30">
+                <div className="absolute top-2 left-2 px-2 py-0.5 rounded-full bg-ink/80 text-[9px] font-bold text-rose border border-rose/30">
                   {p.tag.toUpperCase()}
                 </div>
                 <div className="absolute inset-0 flex items-center justify-center p-3">

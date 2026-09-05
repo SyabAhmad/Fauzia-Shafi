@@ -9,9 +9,6 @@ import Footer from "./components/Footer";
 import Marquee from "./components/Marquee";
 
 const marquee1 = ["INSTAGRAM POSTS", "LINKEDIN BANNERS", "FACEBOOK ADS", "YOUTUBE THUMBNAILS", "BRAND KITS", "LOGO DESIGN"];
-const marqueeHero = ["★ LINKEDIN BANNERS", "✦ FACEBOOK ADS", "★ PROFILE PICTURES", "✦ POSTERS & FLYERS", "★ INSTAGRAM POSTS", "✦ YOUTUBE THUMBNAILS"];
-const marqueeStats = ["★ 50+ DESIGNS DELIVERED", "★ 24H TURNAROUND", "★ 100% SATISFACTION", "★ BULK DISCOUNTS", "★ FREE REVISIONS", "★ FAST DELIVERY"];
-const marquee2 = ["50+ DESIGNS DELIVERED", "100% CLIENT SATISFACTION", "FAST TURNAROUND", "BULK DISCOUNTS", "REVISIONS INCLUDED"];
 const marquee3 = ["FOLLOW @FAUZIYA_SHAFI", "BEHANCE: FAUZIA SHAFI", "DM FOR PRICING", "SLOTS OPEN", "BOOK NOW →"];
 
 export default function Home() {
@@ -21,10 +18,7 @@ export default function Home() {
       <main className="relative">
         <Marquee items={marquee1} speed={35} className="pt-20 border-b border-rose/10" />
         <Hero />
-        <Marquee items={marqueeHero} speed={30} className="border-b border-rose/10" />
-        <Marquee items={marqueeStats} speed={25} reverse className="border-b border-rose/10" />
         <Services />
-        <Marquee items={marquee2} speed={45} reverse className="border-y border-rose/10" />
         <Work />
         <Process />
         <Pricing />
